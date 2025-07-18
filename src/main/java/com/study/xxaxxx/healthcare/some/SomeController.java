@@ -1,12 +1,12 @@
 package com.study.xxaxxx.healthcare.some;
 
-//import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
-//import org.springframework.ui.Model;
+import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
-//import org.springframework.web.client.RestClientException;
+import org.springframework.web.client.RestClientException;
 
-//import com.fasterxml.jackson.core.JsonProcessingException;
+import com.fasterxml.jackson.core.JsonProcessingException;
 
 
 /**
@@ -17,8 +17,8 @@ public class SomeController {
     /**
      * とある処理を行うサービスです。
      */
-   // @Autowired
-    //private SomeService someService;
+    @Autowired
+    private SomeService someService;
 
 
     /**
@@ -26,17 +26,18 @@ public class SomeController {
      *
      * <p>このメソッドは、特定の機能を実行し、結果を返します。
      *
-     * @param param リクエストパラメータ
+     * @param model リクエストパラメータ
      * @return 処理結果の文字列
      */
     // ここに特定の機能を提供するメソッドを実装します。
+    /* 
     @GetMapping("/some")
     public String getSomething() {
         return "some/something"; // ここで返すテンプレートのパスを指定します
-    }
+    } */
 
-/*     @GetMapping("/some")
-    public String getSome(Model model) {
+    @GetMapping("/some")
+    public String getSometjing(Model model) {
         // 結果取得
         try {
             SomeData data = someService.execute();
@@ -50,5 +51,5 @@ public class SomeController {
         }
 
     }
- */
+
 }

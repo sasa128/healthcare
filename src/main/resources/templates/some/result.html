@@ -18,7 +18,17 @@
           src="../../static/img/common/exit.svg" />ログアウト </a>
     </header>
     <main>
-      <div></div>
+      <h1 class="page-title">ワンちゃん　結果</h1>
+      <div class="card">
+        <div class="card-content text-center">
+          <img
+            style="width: 100%"
+            src="https://placehold.jp/400x400.png"
+            th:src="@{${data.message}}"
+          />
+        </div>
+      </div>
+      <!--.card-->
     </main>
     <footer>&copy; 2024 WebPortal.com</footer>
   </body>
